@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  background: url("images/bg.png") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background: #1a0505;
+  font-size: 2em;
+  color: #f0ecec;
+  text-shadow: 2px 2px 4px rgb(248, 1, 1);
+
+  /* outer glow: silver near, gold further */
+  box-shadow:
+    0 0 6px 0 rgba(192, 192, 192, 0.7),  /* soft silver close */
+    0 0 14px 4px rgba(173, 173, 173, 0.6); /* gold further out */
+}
+
+
+.classroom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.bench {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 80%;
+  background: rgba(0,0,0,0.2);
+}
+
+.student {
+  width: 70px;
+  height: 120px;
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.student.male,
+.student.female {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* strong gold → silver glow */
+  box-shadow:
+    0 0 4px 1px rgba(31, 1, 1, 0.9),   /* inner gold */
+    0 0 10px 3px rgba(255, 5, 5, 0.8),  /* softer gold */
+    0 0 18px 6px rgba(192, 192, 192, 0.9),/* bright silver */
+    0 0 26px 10px rgb(192, 192, 180); /* outer silver */
+  border-radius: 8px; /* optional, to match card shape */
+}
+
+.student.male {
+  background-image: url("images/STICKMAN.png");
+}
+
+.student.female {
+  background-image: url("images/STICKWOMAN.png");
+}
+
+/* Info Card */
+.card {
+  width: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #222222;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+  box-shadow: 0 0 20px rgba(65, 2, 2, 0.8);
+  display: none;
+  animation: glow 1.5s infinite alternate;
+  text-align: center;
+  position: fixed;
+  left: 20px;
+  top: 100px;
+    color: white;
+  text-shadow:
+    0 0 2px rgba(252, 4, 4, 0.9),  /* inner white */
+    0 0 6px rgba(119, 4, 250, 0.8);      /* outer red */
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: rgb(248, 249, 250);
+  margin: 0 auto 15px;   /* auto left/right => center */
+  border: 3px solid #fff;
+  display: block;        /* important for margin auto to work */
+}
+
+
+.card .college-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 0;
+  margin-bottom: 10px;
+  background: none;
+  border: none;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px #31084b; }
+  to { box-shadow: 0 0 25px #530c0c; }
+}
