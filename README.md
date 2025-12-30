@@ -1,65 +1,43 @@
-# Interactive Classroom Seating – V BCA F (Row 2)
+# 🎓 Interactive Classroom Seating – V BCA F (Row 2)
 
 An interactive classroom seating visualization for **V BCA F – Row 2**, built using **HTML, CSS, and vanilla JavaScript**.  
-Hover over each seat to instantly see who sits where through a clean, glowing student information card.
+Hover over each seat to see student details through a clean, glowing information card.
+
+🔗 **Live Demo:** https://prajwalm955.github.io/Class-Students_Information_web-page/
 
 ---
 
-## About the Project
+## ⚡ How to Use the Live Demo
 
-This project visually represents a classroom layout using benches and student seats.  
-Each student is displayed as a **male or female stick figure**, and hovering over a seat reveals a floating card containing student details.
+1. Click the [Live Demo](https://prajwalm955.github.io/Class-Students_Information_web-page/) link.  
+2. Hover over any student seat.  
+3. The information card will appear showing the student's details.  
+4. Move the cursor away to hide the card.
 
-The objective is to build a **simple, interactive, and visually structured frontend project** that demonstrates clean UI design and effective DOM manipulation.
+    
+---
+
+## 📝 About the Project
+
+This project visually represents a classroom layout with benches and student seats.  
+Hovering over a seat displays a floating card with the student's name, roll number, and contact information.  
+
+Key points:  
+- Fully static frontend (no frameworks)  
+- Clean layout with hover interactions  
+- Uses semantic HTML `data-*` attributes and vanilla JavaScript  
 
 ---
 
-## Tech Stack
+## ⚡ How to Use the Live Demo
 
-### HTML5
-- Structures the classroom layout and seating arrangement
-- Stores student information using `data-*` attributes  
-  (`data-name`, `data-roll`, `data-email`, `data-gender`, `data-image`)
-
-### CSS3
-- Flexbox-based classroom and bench alignment
-- Male and female stick figure designs
-- Subtle glow effects for visual clarity
-- Styled floating information card with circular profile image
-- Themed background and title styling
-
-### JavaScript (Vanilla ES6)
-- Handles hover interactions on student seats
-- Reads student data dynamically from HTML attributes
-- Updates and toggles the student information card
+1. Click the [Live Demo](https://prajwalm955.github.io/Class-Students_Information_web-page/) link.  
+2. Hover over any student seat.  
+3. The information card will appear showing the student's details.  
+4. Move the cursor away to hide the card.  
 
 ---
 
-## How It Works
+## 👤 Author
 
-1. Each student seat contains personal information stored using HTML `data-*` attributes.
-2. When a user hovers over a student seat:
-   - JavaScript retrieves the stored data
-   - The floating information card is populated dynamically
-   - The card becomes visible with a smooth visual effect
-3. When the cursor leaves the seat:
-   - The information card is hidden again
-
----
-
-## Ideal Use Cases
-
-- Classroom or college seating visualizations
-- Frontend UI/UX practice projects
-- JavaScript DOM manipulation demonstrations
-- Interactive HTML and CSS showcases
-- Beginner-friendly educational projects
-
----
-
-## Project Focus
-
-- Clean layout structure
-- Hover-based interactivity
-- No external libraries or frameworks
-- Fully static and browser-based
+**Prajwal M** – Frontend Development | Software Development Enthusiast.  
